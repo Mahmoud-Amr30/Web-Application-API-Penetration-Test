@@ -13,7 +13,7 @@ Scripting: Python 3, Bash
 
  Team Members
 . [Mahmoud Amr Sherif Ahmed] / https://github.com/Mahmoud-Amr30
-. [ fuck Ehab Gaber Abdellatif] / https://github.com/Ehab226
+. [Ehab Gaber Abdellatif] / https://github.com/Ehab226
 . [Mohamed Monir Mahmoud] / https://github.com/mohamedmonir375-hue
 . [Abdullah Mosad Abdullah] / https://github.com/zer0-sCripTF
 ---
