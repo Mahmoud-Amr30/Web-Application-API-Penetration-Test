@@ -15,7 +15,7 @@ Scripting: Python 3, Bash
 . [Mahmoud Amr Sherif Ahmed] / https://github.com/Mahmoud-Amr30
 . [Ehab Gaber Abdellatif] / https://github.com/Ehab226
 . [Mohamed Monir Mahmoud] / https://github.com/mohamedmonir375-hue
-. [] / 
+. [Abdullah Mosad Abdullah] / https://github.com/zer0-sCripTF
 ---
  Disclaimer: All testing and activities conducted within this repository are strictly performed under authorized scope and explicit legal consent.
 Web-Application-API- Penetration-Test
