@@ -20,8 +20,8 @@
 - A local branch `docs/architecture-submission` was created.
 - The previously reported `rsync -avn` was a dry run; it did not copy files.
 - OpenCode had not been used before the user's latest report; do not assume it has reviewed or edited the repository.
-- Foundation commit `b0f74d1 docs: establish Phase 0 project foundation` exists on `docs/architecture-submission` and is pushed to `origin/docs/architecture-submission` (verified 2026-11-13).
-- A Pull Request from `docs/architecture-submission` to `main` is planned; the actual PR number/URL is recorded once it exists.
+- Foundation commit `b0f74d1 docs: establish Phase 0 project foundation` and follow-up commit `04c80bd docs: complete Phase 0 governance and collaboration foundation` exist on `docs/architecture-submission` and are pushed to `origin/docs/architecture-submission` (verified 2026-11-13).
+- Pull Request #1 from `docs/architecture-submission` to `main` is open: https://github.com/Mahmoud-Amr30/Web-Application-API-Penetration-Test/pull/1 (created 2026-11-13; review and merge pending).
 
 ## Not yet implemented / not evidenced
 - DVWA Docker deployment has not yet been evidenced.
@@ -60,7 +60,7 @@ Summary aligned with `planning/DECISION_LOG.md` (the log is authoritative):
 - Sondos's full name and GitHub username.
 
 ## Immediate priorities
-1. Review the pushed `docs/architecture-submission` branch (PR planned from it to `main`) and have a teammate approve the diff.
+1. Review Pull Request #1 (`docs/architecture-submission` → `main`) and have a teammate approve the diff.
 2. Have one teammate deploy DVWA using the official Docker Compose instructions and capture actual proof.
 3. Have the team assign Phase 0 owners using `planning/TEAM_HANDOFF.md`.
 4. Open GitHub Issues and a Project board so each member can work independently.

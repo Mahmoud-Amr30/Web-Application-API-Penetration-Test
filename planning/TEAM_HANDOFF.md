@@ -20,11 +20,11 @@
 |---|---|
 | Foundation commit | **Committed** — `b0f74d1 docs: establish Phase 0 project foundation` on `docs/architecture-submission` |
 | Remote push | **Completed** — branch is pushed to `origin/docs/architecture-submission` and up to date |
-| Pull Request | **Pending at time of writing** — see PR status below; the actual PR number/URL is recorded once verified |
+| Pull Request | **Open** — [PR #1](https://github.com/Mahmoud-Amr30/Web-Application-API-Penetration-Test/pull/1) (`docs/architecture-submission` → `main`) |
 | Team review | **Pending** — a teammate must review the PR before merge |
 | Merge into `main` | **Pending** — only after review approval |
 
-> PR status will be updated in this file (and `PROJECT_STATE.md`) with the real PR number/URL as soon as it exists. No false completion status is recorded.
+> PR status is recorded above with the real PR number. No false completion status is recorded; review and merge remain pending.
 
 ## What is NOT done yet
 - DVWA is not yet evidenced as deployed.
