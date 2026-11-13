@@ -1,0 +1,110 @@
+name: Finding
+description: Document a validated finding for the final report. Requires reproducible sanitized evidence.
+title: "[FINDING]: "
+labels: ["type:finding"]
+body:
+  - type: input
+    id: finding-id
+    attributes:
+      label: Finding ID
+      description: Assigned by the reporting workstream, e.g. FIND-001. Never reuse IDs.
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Short factual summary, e.g. "Stored XSS in message board".
+    validations:
+      required: true
+  - type: input
+    id: asset
+    attributes:
+      label: Affected asset
+      description: Page, module, or API endpoint of the local DVWA lab actually observed during testing.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: e.g. SQL Injection, Cross-Site Scripting, Broken Access Control.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Proposed by the tester; confirmed during independent review.
+      options:
+        - Info
+        - Low
+        - Medium
+        - High
+        - Critical
+        - TBD (assess during review)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What the weakness is and where it occurs.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Steps another member can repeat inside the local lab.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected (secure) result
+      description: What a correctly implemented control would do.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+      description: What actually happens in the lab.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Defensible explanation of what an attacker could achieve and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence references
+      description: Sanitized evidence IDs (REQ-, RES-, SCR-, LOG-, POC-). No raw Burp/HAR files in Git.
+    validations:
+      required: true
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Remediation
+      description: What would fix the weakness (feeds the Week 4 remediation plan).
+    validations:
+      required: false
+  - type: dropdown
+    id: verification
+    attributes:
+      label: Verification status
+      description: Use docs/METHODOLOGY.md vocabulary and the finding quality gate.
+      options:
+        - Draft (awaiting independent review)
+        - Confirmed
+        - Not a finding (false positive)
+        - Duplicate
+        - Retesting
+        - Retested / resolved
+    validations:
+      required: true

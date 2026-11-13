@@ -1,0 +1,84 @@
+name: Test Case
+description: Document an authorized test against the local DVWA lab and its outcome.
+title: "[TEST]: "
+labels: ["type:test-case"]
+body:
+  - type: input
+    id: test-id
+    attributes:
+      label: Test ID
+      description: Use the backlog ID if one exists (e.g. W2-01), otherwise a short unique ID (e.g. T-001).
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Testing category
+      options:
+        - Week 2 — Input-based (SQLi, XSS, CSRF, SSRF, file upload, path traversal, LFI/RFI)
+        - Week 3 — Auth, session, access control, API
+        - Week 1 — Reconnaissance / application mapping
+        - Other (describe below)
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope-confirmation
+    attributes:
+      label: Authorized target / scope confirmation
+      description: Confirm before running the test. Do not run the test if you cannot tick these.
+      options:
+        - label: Target is the team's local DVWA lab (127.0.0.1, loopback-only)
+          required: true
+        - label: Test category is covered by the agreed Rules of Engagement
+          required: true
+        - label: No traffic will leave the local lab
+          required: true
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions
+      description: Required app state, security level, role, tooling, or configuration.
+    validations:
+      required: true
+  - type: textarea
+    id: procedure
+    attributes:
+      label: Test procedure
+      description: Exact steps another member could repeat. Define the procedure BEFORE executing.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What outcome would indicate the behavior under test.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What actually happened. Record deviations from the procedure.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Sanitized evidence IDs (REQ-, RES-, SCR-, LOG-, POC-). Raw captures stay out of Git.
+    validations:
+      required: false
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome status
+      description: Use docs/METHODOLOGY.md vocabulary. Only mark Confirmed after the quality gate.
+      options:
+        - Not yet executed (planned)
+        - Confirmed
+        - Not observed
+        - Inconclusive
+        - Not applicable
+        - Blocked
+    validations:
+      required: true

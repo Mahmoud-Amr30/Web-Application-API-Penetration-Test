@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Team question or coordination
+    url: https://github.com/Mahmoud-Amr30/Web-Application-API-Penetration-Test/issues
+    about: Existing issues are the primary task tracking (DEC-009). Comment on the relevant issue instead of opening a blank one.

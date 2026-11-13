@@ -20,6 +20,8 @@
 - A local branch `docs/architecture-submission` was created.
 - The previously reported `rsync -avn` was a dry run; it did not copy files.
 - OpenCode had not been used before the user's latest report; do not assume it has reviewed or edited the repository.
+- Foundation commit `b0f74d1 docs: establish Phase 0 project foundation` exists on `docs/architecture-submission` and is pushed to `origin/docs/architecture-submission` (verified 2026-11-13).
+- A Pull Request from `docs/architecture-submission` to `main` is planned; the actual PR number/URL is recorded once it exists.
 
 ## Not yet implemented / not evidenced
 - DVWA Docker deployment has not yet been evidenced.
@@ -29,12 +31,19 @@
 - No findings or PoCs are confirmed.
 
 ## Decisions
+Summary aligned with `planning/DECISION_LOG.md` (the log is authoritative):
+
 - DEC-001: Project 2 selected.
 - DEC-002: DVWA selected as primary target.
 - DEC-003: Docker Compose selected as deployment approach.
-- DEC-004: Both XMind maps completed; shared link recorded above.
-- DEC-005: Use GitHub Issues/Projects/PRs to coordinate team work.
-- DEC-006: Keep the DVWA port loopback-only; do not expose it to LAN or Internet.
+- DEC-004: XMind 01 — DEPI Project Phases completed.
+- DEC-005: XMind 02 — DVWA Target Architecture completed.
+- DEC-006: Phase 0 team target is Sunday 2026-11-15.
+- DEC-007: Keep DVWA local and loopback-only.
+- DEC-008: Repository remains private.
+- DEC-009: GitHub Issues are the primary task-tracking source of truth.
+- DEC-010: Raw Burp projects and unredacted traffic must not be committed to Git.
+- DEC-011: Team collaboration uses a lightweight branch and Pull Request workflow.
 
 ## Schedule
 - Phase 0 intended start: Saturday 2026-11-07.
@@ -51,7 +60,7 @@
 - Sondos's full name and GitHub username.
 
 ## Immediate priorities
-1. Add this foundation pack to `docs/architecture-submission` and review the diff.
+1. Review the pushed `docs/architecture-submission` branch (PR planned from it to `main`) and have a teammate approve the diff.
 2. Have one teammate deploy DVWA using the official Docker Compose instructions and capture actual proof.
 3. Have the team assign Phase 0 owners using `planning/TEAM_HANDOFF.md`.
 4. Open GitHub Issues and a Project board so each member can work independently.

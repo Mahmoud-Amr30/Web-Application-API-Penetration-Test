@@ -16,9 +16,15 @@
 *.pcap
 *.pcapng
 *.session
+*.sqlite
+*.sqlite3
+*.db
 captures/raw/
 evidence/raw/
 evidence/unredacted/
+# Note: generic patterns like *token* and *cookie* were reviewed and intentionally
+# NOT added — they would hide legitimate sanitized documentation such as
+# token-redaction notes. Prefer specific extensions and directory rules above.
 
 # Local development
 *.log

@@ -14,10 +14,19 @@
 - GitHub repository cloned locally; branch `docs/architecture-submission` created.
 - Earlier `rsync -avn` was only a dry run. It copied nothing.
 
+## Verified publication status (2026-11-13)
+
+| Step | Status |
+|---|---|
+| Foundation commit | **Committed** — `b0f74d1 docs: establish Phase 0 project foundation` on `docs/architecture-submission` |
+| Remote push | **Completed** — branch is pushed to `origin/docs/architecture-submission` and up to date |
+| Pull Request | **Pending at time of writing** — see PR status below; the actual PR number/URL is recorded once verified |
+| Team review | **Pending** — a teammate must review the PR before merge |
+| Merge into `main` | **Pending** — only after review approval |
+
+> PR status will be updated in this file (and `PROJECT_STATE.md`) with the real PR number/URL as soon as it exists. No false completion status is recorded.
+
 ## What is NOT done yet
-- Bootstrap foundation files have been copied to the local
-docs/architecture-submission branch. Review, commit, push,
-and pull request are pending.
 - DVWA is not yet evidenced as deployed.
 - No first Burp request/response evidence has been supplied.
 - Final owners/reviewers are not recorded.
