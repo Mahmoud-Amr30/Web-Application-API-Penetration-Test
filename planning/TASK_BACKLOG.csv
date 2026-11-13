@@ -1,0 +1,16 @@
+Task ID,Title,Phase,Priority,Owner,Reviewer,Status,Expected Output,Definition of Done
+P0-01,Apply Phase 0 foundation pack through a reviewed PR,Phase 0,P0,Unassigned,Unassigned,TODO,Updated project foundation,"PR merged; six-member roster, DVWA, Docker Compose and XMind links recorded"
+P0-02,Deploy DVWA using official Docker Compose,Phase 0,P0,Unassigned,Unassigned,TODO,Running local DVWA lab,docker compose ps captured; local page loads; Git commit recorded
+P0-03,Verify DVWA is loopback-only,Phase 0,P0,Unassigned,Unassigned,TODO,Port mapping proof,compose.yml shows 127.0.0.1 binding; no LAN/Internet exposure
+P0-04,Capture practical implementation evidence,Phase 0,P0,Unassigned,Unassigned,TODO,Sanitized screenshots/logs,"Browser screenshot, docker ps, version and commit evidence linked"
+P0-05,Assign six team members to workstreams,Phase 0,P1,Unassigned,Unassigned,TODO,Updated team roles,"Each member has an owner role, reviewer, and visible output"
+P0-06,Create GitHub Issues and Project board,Phase 0,P1,Unassigned,Unassigned,TODO,Issue list and board,"Tasks have status, priority, owner, reviewer and due date"
+P0-07,Confirm Architecture submission format and acceptance with instructor,Phase 0,P0,Unassigned,Unassigned,TODO,Instructor clarification,"Expected format, implemented-part evidence and revised due date recorded"
+P0-08,Review DVWA API lab prerequisites and coverage gaps,Phase 0,P1,Unassigned,Unassigned,TODO,API coverage note,mod_rewrite/vendor prerequisites checked; any gaps and supplemental lab request recorded
+P0-09,Confirm Sondos full name and GitHub username; add repository access,Phase 0,P1,Unassigned,Unassigned,TODO,Updated team roster and collaborator access,Sondos identity confirmed by team and invited by repository admin
+W1-01,"Study HTTP/HTTPS, methods, headers, cookies, sessions and auth flows",Week 1,P1,Unassigned,Unassigned,TODO,Learning notes and auth/session concepts,Notes reviewed by another member
+W1-02,"Configure Burp Suite Proxy, Repeater, Intruder and site map",Week 1,P1,Unassigned,Unassigned,TODO,Burp setup record,Approved lab traffic passes through proxy; raw Burp project kept outside Git
+W1-03,Create actual DVWA application map,Week 1,P1,Unassigned,Unassigned,TODO,Application map,"Map is based on observed app pages/modules, not just the XMind planning map"
+W1-04,Build request/response inventory,Week 1,P1,Unassigned,Unassigned,TODO,Request/response inventory,"Observed requests include method, path, role/context and evidence IDs; secrets redacted"
+W1-05,Document authentication/session flow,Week 1,P1,Unassigned,Unassigned,TODO,Auth/session flow diagram,"Login, session, logout and relevant state captured from actual application"
+W1-06,Prepare and review the security test plan,Week 1,P1,Unassigned,Unassigned,TODO,Test plan,"Tests mapped to DEPI requirements, target capability and approved scope"

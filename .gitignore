@@ -1,0 +1,33 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+
+# Raw testing artifacts — do not commit
+*.burp
+*.har
+*.http
+*.pcap
+*.pcapng
+*.session
+captures/raw/
+evidence/raw/
+evidence/unredacted/
+
+# Local development
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/

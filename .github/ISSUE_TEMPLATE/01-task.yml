@@ -1,0 +1,49 @@
+name: Phase or Project Task
+description: Track a project deliverable with an owner and reviewer.
+title: "[P0/TASK]: "
+labels: ["type:task"]
+body:
+  - type: input
+    id: objective
+    attributes:
+      label: Objective
+      placeholder: Deploy DVWA locally using official Docker Compose
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      options:
+        - Phase 0 — Foundation
+        - Week 1 — Web fundamentals and Burp
+        - Week 2 — Input-based vulnerabilities
+        - Week 3 — Authentication, session, access control and API
+        - Week 4 — Chaining, reporting and retest
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner (GitHub username)
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer (GitHub username)
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output / artifact
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      description: How will another member verify completion?
+    validations:
+      required: true
